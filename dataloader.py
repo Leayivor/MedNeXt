@@ -89,7 +89,7 @@ if __name__ == "__main__":
     parser.add_argument("--train_val_split", type=float, default=0.8,
                         help="Fraction of data for training (rest for validation)")
     parser.add_argument("--num_workers", type=int, default=4, help="Number of data loader workers")
-   Ａargs = parser.parse_args()
+    args = parser.parse_args()
     
     train_loader, val_loader = get_brats2021_dataloaders(args)
     print(f"Training samples: {len(train_loader.dataset)}")
