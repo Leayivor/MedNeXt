@@ -8,7 +8,7 @@ from monai.losses import DiceLoss
 from monai.metrics import DiceMetric
 from tqdm import tqdm
 from dataloader import get_brats2021_dataloaders
-from models.mednext import MedNeXt
+from nnunet_mednext.network_architecture.mednextv1.MedNextV1 import MedNeXt
 
 def train_model(model, train_loader, val_loader, device, args):
     # Loss and optimizer
